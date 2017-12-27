@@ -5,15 +5,12 @@
  * @variable PRIVATE { Number } `total`
  * @return {object} `calculator` object that can be used
  */
-
     function calculatorModule() {
-       let _memory = 0;
-       let _total = 0;
+       var _memory = 0;
+       var _total = 0;
 
-       return calculator = {
-           
-       }
-    }
+       
+    
 
   /**
    * sets the `total` to the number passed in
@@ -21,6 +18,11 @@
    * @return { Number }    current total
    */
 
+    function load(x) {
+        validate(x);
+        _total = x;
+        return _total;
+    }
 
   /**
    * Return the value of `total`
@@ -70,4 +72,14 @@
   /**
    * Validation
    */
+    function validate(x){
+        if (typeof x !== "number"){
+            return undefined;
+        }
+    }
 
+    return calculator = {
+        load: load
+       };
+
+    }
