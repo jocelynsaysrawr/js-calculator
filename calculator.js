@@ -39,6 +39,10 @@
    * @param { Number } x
    */
 
+   function add(x){
+       validate(x);
+       _total += x;
+   }
 
   /**
    * Subtracts the value passed in from `total`
@@ -84,7 +88,8 @@
 
     return calculator = {
         load: load,
-        getTotal: getTotal
+        getTotal: getTotal,
+        add: add
        };
 
     }
