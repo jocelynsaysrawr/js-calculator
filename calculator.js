@@ -59,6 +59,10 @@
    * @param  { Number } x
    */
 
+   function multiply(x) {
+       validate(x);
+       _total *= x;
+   }
 
   /**
    * Divides the value passing in by `total`
@@ -94,7 +98,8 @@
         load: load,
         getTotal: getTotal,
         add: add,
-        subtract: subtract
+        subtract: subtract,
+        multiply: multiply
        };
 
     }
