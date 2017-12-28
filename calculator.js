@@ -104,7 +104,7 @@
    */
     function validate(x){
         if (typeof x !== "number"){
-            return undefined;
+            throw Error ("Invalid Input");
         }
     }
 
