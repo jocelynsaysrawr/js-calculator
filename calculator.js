@@ -69,6 +69,10 @@
    * @param  { Number } x
    */
 
+   function divide(x) {
+       validate(x);
+       _total /= x;
+   }
 
   /**
    * Return the value stored at `memory`
@@ -99,7 +103,8 @@
         getTotal: getTotal,
         add: add,
         subtract: subtract,
-        multiply: multiply
+        multiply: multiply,
+        divide: divide
        };
 
     }
