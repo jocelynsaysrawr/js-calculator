@@ -49,6 +49,10 @@
    * @param  { Number } x
    */
 
+   function subtract(x) {
+       validate(x);
+       _total -= x;
+   }
 
   /**
    * Multiplies the value by `total`
@@ -89,7 +93,8 @@
     return calculator = {
         load: load,
         getTotal: getTotal,
-        add: add
+        add: add,
+        subtract: subtract
        };
 
     }
