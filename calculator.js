@@ -29,6 +29,10 @@
    * @return { Number }
    */
 
+   function getTotal() {
+       return _total;
+   }
+
 
   /**
    * Sums the value passed in with `total`
@@ -79,7 +83,8 @@
     }
 
     return calculator = {
-        load: load
+        load: load,
+        getTotal: getTotal
        };
 
     }
