@@ -79,6 +79,9 @@
    * @return { Number }
    */
 
+   function recallMemory() {
+       return _memory;
+   }
 
   /**
    * Stores the value of `total` to `memory`
@@ -104,7 +107,8 @@
         add: add,
         subtract: subtract,
         multiply: multiply,
-        divide: divide
+        divide: divide,
+        recallMemory: recallMemory
        };
 
     }
