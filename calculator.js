@@ -95,6 +95,10 @@
    * Clear the value stored at `memory`
    */
 
+   function clearMemory() {
+       _memory = 0;
+   }
+
   /**
    * Validation
    */
@@ -112,7 +116,8 @@
         multiply: multiply,
         divide: divide,
         recallMemory: recallMemory,
-        saveMemory: saveMemory
+        saveMemory: saveMemory,
+        clearMemory: clearMemory
        };
 
     }
